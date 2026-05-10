@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <button class="back-btn">&#9776;</button>
+                <span class="header-title">Super Admin</span>
+            </div>
+            <a href="notifikasi.html" style="position: relative;">
+                <span style="font-size: 20px;">&#128276;</span>
+                <span style="position: absolute; top: -2px; right: -2px; width: 8px; height: 8px; background: red; border-radius: 50%;"></span>
+            </a>
+        </header>
+
+        <div class="main-content" style="padding: 20px;">
+            <div class="card mb-3">
+                <div class="flex-center">
+                    <div class="avatar avatar-lg">SA</div>
+                    <div style="flex: 1;">
+                        <h3>Super Admin</h3>
+                        <p class="text-muted">superadmin@company.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid mb-3">
+                <div class="stat-card">
+                    <div class="stat-value">156</div>
+                    <div class="stat-label">Total Supplier</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">23</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">89%</div>
+                    <div class="stat-label">Approval Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Admin Aktif</div>
+                </div>
+            </div>
+
+            <h3 class="section-title">Manajemen</h3>
+            
+            <div class="card mb-2">
+                <a href="supplier-list-admin.html" class="menu-item" style="border: none;">
+                    <div style="width: 40px; height: 40px; background: #dbeafe; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #1e40af;">&#128101;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Kelola Supplier</span>
+                        <p class="text-muted" style="font-size: 12px;">156 supplier terdaftar</p>
+                    </div>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+            </div>
+
+            <div class="card mb-2">
+                <a href="supplier-approval-owner.html" class="menu-item" style="border: none;">
+                    <div style="width: 40px; height: 40px; background: #fef3c7; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #92400e;">&#10003;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Approval Supplier</span>
+                        <p class="text-muted" style="font-size: 12px;">23 menunggu persetujuan</p>
+                    </div>
+                    <span class="badge badge-warning">23</span>
+                </a>
+            </div>
+
+            <div class="card mb-2">
+                <a href="#" class="menu-item" style="border: none;">
+                    <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #166534;">&#128202;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Laporan</span>
+                        <p class="text-muted" style="font-size: 12px;">Statistik & analytics</p>
+                    </div>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+            </div>
+
+            <div class="card mb-2">
+                <a href="#" class="menu-item" style="border: none;">
+                    <div style="width: 40px; height: 40px; background: #f3f4f6; border-radius: 8px; display: flex; align-items: center; justify-content: center;">&#128100;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Kelola Admin</span>
+                        <p class="text-muted" style="font-size: 12px;">12 admin aktif</p>
+                    </div>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+            </div>
+
+            <div class="card mb-2">
+                <a href="#" class="menu-item" style="border: none;">
+                    <div style="width: 40px; height: 40px; background: #fce7f3; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #9d174d;">&#9881;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Pengaturan Sistem</span>
+                        <p class="text-muted" style="font-size: 12px;">Konfigurasi global</p>
+                    </div>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+            </div>
+
+            <h3 class="section-title mt-3">Aktivitas Terbaru</h3>
+            
+            <div class="card">
+                <div class="notification-item" style="border: none; padding: 0;">
+                    <div class="notification-icon info">&#128196;</div>
+                    <div class="notification-content">
+                        <div class="notification-title">Supplier Baru</div>
+                        <div class="notification-desc">PT Sejahtera mengajukan bergabung</div>
+                        <div class="notification-time">5 menit yang lalu</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="notification-item" style="border: none; padding: 0;">
+                    <div class="notification-icon success">&#10003;</div>
+                    <div class="notification-content">
+                        <div class="notification-title">Approved</div>
+                        <div class="notification-desc">PT Maju Jaya disetujui</div>
+                        <div class="notification-time">1 jam yang lalu</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="notification-item" style="border: none; padding: 0;">
+                    <div class="notification-icon warning">&#9888;</div>
+                    <div class="notification-content">
+                        <div class="notification-title">Expired</div>
+                        <div class="notification-desc">Kontrak PT Bersama berakhir</div>
+                        <div class="notification-time">3 jam yang lalu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bottom">
+            <a href="super-admin.html" class="nav-item active">
+                <span class="nav-icon">&#127968;</span>
+                <span>Beranda</span>
+            </a>
+            <a href="supplier-list-admin.html" class="nav-item">
+                <span class="nav-icon">&#128101;</span>
+                <span>Supplier</span>
+            </a>
+            <a href="supplier-approval-owner.html" class="nav-item">
+                <span class="nav-icon">&#10003;</span>
+                <span>Approval</span>
+            </a>
+            <a href="profil-pemasok.html" class="nav-item">
+                <span class="nav-icon">&#128100;</span>
+                <span>Profil</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <a href="login-karyawan.html" class="back-btn">&#8592;</a>
+                <span class="header-title">UI Components</span>
+            </div>
+        </header>
+
+        <div class="main-content" style="padding: 20px;">
+            <h2 class="mb-3">Button Variants</h2>
+            <div class="card mb-3">
+                <button class="btn btn-primary mb-2">Primary Button</button>
+                <button class="btn btn-secondary mb-2">Secondary Button</button>
+                <button class="btn btn-outline mb-2">Outline Button</button>
+                <button class="btn btn-success mb-2">Success Button</button>
+                <button class="btn btn-danger mb-2">Danger Button</button>
+                <button class="btn btn-link">Link Button</button>
+            </div>
+
+            <h2 class="mb-3">Button Sizes</h2>
+            <div class="card mb-3">
+                <button class="btn btn-primary mb-2">Normal</button>
+                <button class="btn btn-primary btn-sm">Small</button>
+            </div>
+
+            <h2 class="mb-3">Form Elements</h2>
+            <div class="card mb-3">
+                <div class="input-group">
+                    <label>Text Input</label>
+                    <input type="text" placeholder="Masukkan teks...">
+                </div>
+                <div class="input-group">
+                    <label>Email Input</label>
+                    <input type="email" placeholder="email@example.com">
+                </div>
+                <div class="input-group">
+                    <label>Password Input</label>
+                    <input type="password" placeholder="Masukkan password...">
+                </div>
+                <div class="input-group">
+                    <label>Select Option</label>
+                    <select>
+                        <option>Pilih opsi...</option>
+                        <option>Opsi 1</option>
+                        <option>Opsi 2</option>
+                    </select>
+                </div>
+                <label style="display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox"> Checkbox
+                </label>
+            </div>
+
+            <h2 class="mb-3">Badges</h2>
+            <div class="card mb-3">
+                <div class="flex-between mb-2">
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-warning">Warning</span>
+                </div>
+                <div class="flex-between">
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-primary">Primary</span>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Avatar</h2>
+            <div class="card mb-3">
+                <div class="flex-center">
+                    <div class="avatar avatar-sm">S</div>
+                    <div class="avatar">M</div>
+                    <div class="avatar avatar-lg">L</div>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Cards</h2>
+            <div class="card mb-3">
+                <h3>Card Title</h3>
+                <p class="text-muted">This is a card with some content inside.</p>
+            </div>
+
+            <div class="card mb-3" style="padding: 20px;">
+                <div class="card-header">
+                    <h3>Card with Header</h3>
+                </div>
+                <p>Card content goes here.</p>
+            </div>
+
+            <h2 class="mb-3">List Items</h2>
+            <div class="card mb-3">
+                <div class="list-item mb-2">
+                    <div class="avatar">A</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Item Title</span>
+                        <p class="text-muted" style="font-size: 12px;">Description text</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="avatar">B</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Another Item</span>
+                        <p class="text-muted" style="font-size: 12px;">More description</p>
+                    </div>
+                    <span class="badge badge-success">Active</span>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Progress Bar</h2>
+            <div class="card mb-3">
+                <div class="mb-2">
+                    <div class="flex-between mb-1">
+                        <span>Progress 50%</span>
+                        <span class="text-muted">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex-between mb-1">
+                        <span>Progress 75%</span>
+                        <span class="text-muted">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Stats Card</h2>
+            <div class="stats-grid mb-3">
+                <div class="stat-card">
+                    <div class="stat-value">123</div>
+                    <div class="stat-label">Total Items</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$456</div>
+                    <div class="stat-label">Revenue</div>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Toggle Switch</h2>
+            <div class="card mb-3">
+                <div class="flex-between mb-2">
+                    <span>Notifications</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="flex-between">
+                    <span>Dark Mode</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Chips/Tags</h2>
+            <div class="card mb-3">
+                <div class="filter-chips" style="padding: 0;">
+                    <span class="chip active">Active</span>
+                    <span class="chip">Inactive</span>
+                    <span class="chip">Pending</span>
+                    <span class="chip">Approved</span>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Menu Items</h2>
+            <div class="card mb-3" style="padding: 0;">
+                <a href="#" class="menu-item">
+                    <span>&#128196;</span>
+                    <span style="flex: 1;">Produk</span>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+                <div class="divider" style="margin: 0;"></div>
+                <a href="#" class="menu-item">
+                    <span>&#128203;</span>
+                    <span style="flex: 1;">Pesanan</span>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+                <div class="divider" style="margin: 0;"></div>
+                <a href="#" class="menu-item">
+                    <span>&#128100;</span>
+                    <span style="flex: 1;">Profil</span>
+                    <span style="color: var(--text-secondary);">&#8250;</span>
+                </a>
+            </div>
+
+            <h2 class="mb-3">OTP Input</h2>
+            <div class="card mb-3">
+                <div class="otp-input">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+            </div>
+
+            <h2 class="mb-3">Search Bar</h2>
+            <div class="search-bar mb-3">
+                <span>&#128269;</span>
+                <input type="text" placeholder="Cari...">
+            </div>
+
+            <h2 class="mb-3">Notification Item</h2>
+            <div class="card mb-3" style="padding: 0;">
+                <div class="notification-item">
+                    <div class="notification-icon info">&#128196;</div>
+                    <div class="notification-content">
+                        <div class="notification-title">Notification Title</div>
+                        <div class="notification-desc">This is the notification description.</div>
+                        <div class="notification-time">2 jam yang lalu</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Tabs</h2>
+            <div class="card mb-3">
+                <div class="tab-nav" style="padding: 0; border: none; margin-bottom: 0;">
+                    <a href="#" class="tab-item active">Tab 1</a>
+                    <a href="#" class="tab-item">Tab 2</a>
+                    <a href="#" class="tab-item">Tab 3</a>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Colors</h2>
+            <div class="card mb-3">
+                <div class="stats-grid">
+                    <div style="text-align: center;">
+                        <div style="width: 100%; height: 40px; background: var(--primary); border-radius: 4px;"></div>
+                        <span class="text-muted" style="font-size: 12px;">Primary</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 100%; height: 40px; background: var(--success); border-radius: 4px;"></div>
+                        <span class="text-muted" style="font-size: 12px;">Success</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 100%; height: 40px; background: var(--warning); border-radius: 4px;"></div>
+                        <span class="text-muted" style="font-size: 12px;">Warning</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 100%; height: 40px; background: var(--danger); border-radius: 4px;"></div>
+                        <span class="text-muted" style="font-size: 12px;">Danger</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Status Dots</h2>
+            <div class="card mb-3">
+                <div class="flex-center" style="gap: 16px;">
+                    <span class="status-dot active"></span> Aktif
+                    <span class="status-dot pending"></span> Pending
+                    <span class="status-dot inactive"></span> Nonaktif
+                </div>
+            </div>
+
+            <div class="mb-4"></div>
+        </div>
+    </div>
+</body>
+</html>

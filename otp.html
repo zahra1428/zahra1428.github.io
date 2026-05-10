@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi OTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page" style="justify-content: center;">
+            <div style="text-align: center; width: 100%;">
+                <div class="logo-small" style="margin: 0 auto 24px;">&#128241;</div>
+                
+                <h1>Verifikasi OTP</h1>
+                <p class="mb-4">Kami telah mengirim kode ke nomor<br>+(62) 812-3456-7890</p>
+
+                <form action="login-berhasil-1.html" method="get">
+                    <div class="otp-input mb-4">
+                        <input type="text" maxlength="1" pattern="[0-9]" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" required>
+                        <input type="text" maxlength="1" pattern="[0-9]" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-3">Verifikasi</button>
+                </form>
+
+                <p class="text-muted mb-2">Tidak menerima kode?</p>
+                <button class="btn btn-link">Kirim Ulang (59s)</button>
+
+                <div class="divider mt-4"></div>
+                
+                <a href="login-pemasok.html" class="btn btn-secondary">Kembali</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const inputs = document.querySelectorAll('.otp-input input');
+        
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                if (e.target.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+            
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && e.target.value.length === 0 && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

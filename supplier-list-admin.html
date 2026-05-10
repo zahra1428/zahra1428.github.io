@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Supplier - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <a href="super-admin.html" class="back-btn">&#8592;</a>
+                <span class="header-title">Daftar Supplier</span>
+            </div>
+            <a href="#" style="font-size: 14px; color: var(--primary);">&#10010;</a>
+        </header>
+
+        <div class="main-content" style="padding: 20px;">
+            <div class="search-bar">
+                <span>&#128269;</span>
+                <input type="text" placeholder="Cari supplier...">
+            </div>
+
+            <div class="filter-chips">
+                <span class="chip active">Semua</span>
+                <span class="chip">Aktif</span>
+                <span class="chip">Pending</span>
+                <span class="chip">Nonaktif</span>
+            </div>
+
+            <h3 class="section-title">Supplier (156)</h3>
+
+            <div class="card mb-2">
+                <div class="flex-center mb-2">
+                    <div class="avatar">MJ</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">PT Maju Jaya</span>
+                        <p class="text-muted" style="font-size: 12;">Electronic</p>
+                    </div>
+                    <span class="badge badge-success">Aktif</span>
+                </div>
+                <div class="flex-between">
+                    <span class="text-muted" style="font-size: 12px;">Total Pesanan: 45</span>
+                    <a href="#" style="color: var(--primary); font-size: 12px;">Detail &#8250;</a>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="flex-center mb-2">
+                    <div class="avatar">SB</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">PT Sumber Baru</span>
+                        <p class="text-muted" style="font-size: 12;">Furniture</p>
+                    </div>
+                    <span class="badge badge-success">Aktif</span>
+                </div>
+                <div class="flex-between">
+                    <span class="text-muted" style="font-size: 12px;">Total Pesanan: 32</span>
+                    <a href="#" style="color: var(--primary); font-size: 12px;">Detail &#8250;</a>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="flex-center mb-2">
+                    <div class="avatar">AS</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">CV Anugerah Sentosa</span>
+                        <p class="text-muted" style="font-size: 12;">Office Supplies</p>
+                    </div>
+                    <span class="badge badge-warning">Pending</span>
+                </div>
+                <div class="flex-between">
+                    <span class="text-muted" style="font-size: 12px;">Menunggu: 5 hari</span>
+                    <a href="supplier-approval-owner.html" style="color: var(--primary); font-size: 12px;">Review &#8250;</a>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="flex-center mb-2">
+                    <div class="avatar">LM</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">PT Logistik Mantap</span>
+                        <p class="text-muted" style="font-size: 12;">Logistics</p>
+                    </div>
+                    <span class="badge badge-success">Aktif</span>
+                </div>
+                <div class="flex-between">
+                    <span class="text-muted" style="font-size: 12px;">Total Pesanan: 28</span>
+                    <a href="#" style="color: var(--primary); font-size: 12px;">Detail &#8250;</a>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="flex-center mb-2">
+                    <div class="avatar">BS</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">PT Berkah Sejahtera</span>
+                        <p class="text-muted" style="font-size: 12;">IT Equipment</p>
+                    </div>
+                    <span class="badge badge-danger">Nonaktif</span>
+                </div>
+                <div class="flex-between">
+                    <span class="text-muted" style="font-size: 12px;">Expired: Jan 2024</span>
+                    <a href="#" style="color: var(--primary); font-size: 12px;">Detail &#8250;</a>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="flex-center mb-2">
+                    <div class="avatar">HN</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">PT Harapan Nusantara</span>
+                        <p class="text-muted" style="font-size: 12;">Stationery</p>
+                    </div>
+                    <span class="badge badge-success">Aktif</span>
+                </div>
+                <div class="flex-between">
+                    <span class="text-muted" style="font-size: 12px;">Total Pesanan: 15</span>
+                    <a href="#" style="color: var(--primary); font-size: 12px;">Detail &#8250;</a>
+                </div>
+            </div>
+
+            <button class="btn btn-outline mt-3">Muat Lebih Banyak</button>
+        </div>
+
+        <nav class="nav-bottom">
+            <a href="super-admin.html" class="nav-item">
+                <span class="nav-icon">&#127968;</span>
+                <span>Beranda</span>
+            </a>
+            <a href="supplier-list-admin.html" class="nav-item active">
+                <span class="nav-icon">&#128101;</span>
+                <span>Supplier</span>
+            </a>
+            <a href="supplier-approval-owner.html" class="nav-item">
+                <span class="nav-icon">&#10003;</span>
+                <span>Approval</span>
+            </a>
+            <a href="profil-pemasok.html" class="nav-item">
+                <span class="nav-icon">&#128100;</span>
+                <span>Profil</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>

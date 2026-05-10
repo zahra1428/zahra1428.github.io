@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pemasok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page" style="justify-content: center;">
+            <div class="logo">S</div>
+            
+            <h1 class="text-center">Masuk sebagai Pemasok</h1>
+            <p class="text-center mb-4">Silakan masuk dengan akun pemasok Anda</p>
+
+            <form action="login-berhasil.html" method="get">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="nama@pemasok.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Masukkan password" required>
+                </div>
+
+                <div class="flex-between mb-3">
+                    <label style="display: flex; align-items: center; gap: 8px; font-size: 14px;">
+                        <input type="checkbox"> Ingat saya
+                    </label>
+                    <a href="#" class="btn-link">Lupa password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-3">Masuk</button>
+                
+                <p class="text-center">
+                    Bukan pemasok? <a href="login-karyawan.html" class="btn-link">Masuk sebagai Karyawan</a>
+                </p>
+            </form>
+
+            <div class="divider mt-3"></div>
+            
+            <p class="text-center text-muted">
+                Belum punya akun? <a href="#" class="btn-link">Daftar sebagai Pemasok</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

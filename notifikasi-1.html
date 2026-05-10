@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi - Variant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <a href="super-admin.html" class="back-btn">&#8592;</a>
+                <span class="header-title">Notifikasi</span>
+            </div>
+            <button style="background: none; border: none; color: var(--primary); font-size: 14px;">&#128393;</button>
+        </header>
+
+        <div class="main-content" style="padding: 20px;">
+            <div class="search-bar">
+                <span>&#128269;</span>
+                <input type="text" placeholder="Cari notifikasi...">
+            </div>
+
+            <div class="flex-between mb-3">
+                <span class="text-muted">8 notifikasi belum dibaca</span>
+                <button class="btn-link" style="font-size: 12px;">Tandai semua dibaca</button>
+            </div>
+
+            <h3 class="section-title">Notifikasi Penting</h3>
+
+            <div class="card mb-2" style="border-left: 4px solid var(--danger);">
+                <div class="flex-center mb-2">
+                    <div class="notification-icon" style="background: #fee2e2; color: #991b1b;">&#9888;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Kontrak Akan Berakhir</span>
+                        <p class="text-muted" style="font-size: 12px;">5 supplier</p>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 13px;">Kontrak dengan 5 supplier akan berakhir dalam 30 hari. Silakan lakukan perpanjangan.</p>
+                <div class="mt-2">
+                    <span class="badge badge-danger">Segera</span>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="border-left: 4px solid var(--warning);">
+                <div class="flex-center mb-2">
+                    <div class="notification-icon" style="background: #fef3c7; color: #92400e;">&#128196;</div>
+                    <div style="flex: 1;">
+                        <span class="fw-semibold">Permintaan Approval</span>
+                        <p class="text-muted" style="font-size: 12px;">15 permintaan</p>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 13px;">Terdapat 15 permintaan approval supplier yang perlu ditinjau.</p>
+                <div class="mt-2">
+                    <a href="supplier-approval-owner.html" class="btn btn-sm btn-primary">Lihat Sekarang</a>
+                </div>
+            </div>
+
+            <h3 class="section-title mt-3">Semua Notifikasi</h3>
+
+            <div class="notification-item unread">
+                <div class="notification-icon info">&#128101;</div>
+                <div class="notification-content">
+                    <div class="notification-title">Supplier Baru Mendaftar</div>
+                    <div class="notification-desc">PT Teknologi Indonesia mengajukan bergabung sebagai supplier</div>
+                    <div class="notification-time">30 menit yang lalu</div>
+                </div>
+            </div>
+
+            <div class="notification-item unread">
+                <div class="notification-icon success">&#10003;</div>
+                <div class="notification-content">
+                    <div class="notification-title">Supplier Diverifikasi</div>
+                    <div class="notification-desc">PT Maju Jaya telah menyelesaikan verifikasi dokumen</div>
+                    <div class="notification-time">1 jam yang lalu</div>
+                </div>
+            </div>
+
+            <div class="notification-item unread">
+                <div class="notification-icon info">&#128202;</div>
+                <div class="notification-content">
+                    <div class="notification-title">Laporan Bulanan</div>
+                    <div class="notification-desc">Laporan performance supplier bulan Mei 2024 tersedia</div>
+                    <div class="notification-time">2 jam yang lalu</div>
+                </div>
+            </div>
+
+            <div class="notification-item">
+                <div class="notification-icon success">&#9989;</div>
+                <div class="notification-content">
+                    <div class="notification-title">Pembayaran Selesai</div>
+                    <div class="notification-desc">Invoice INV-2024-045 telah dibayar ke PT Maju Jaya</div>
+                    <div class="notification-time">Kemarin</div>
+                </div>
+            </div>
+
+            <div class="notification-item">
+                <div class="notification-icon warning">&#128221;</div>
+                <div class="notification-content">
+                    <div class="notification-title">Dokumen Expired</div>
+                    <div class="notification-desc">Sertifikat halal PT Sumber Rejeki expired hari ini</div>
+                    <div class="notification-time">Kemarin</div>
+                </div>
+            </div>
+
+            <div class="notification-item">
+                <div class="notification-icon info">&#128230;</div>
+                <div class="notification-content">
+                    <div class="notification-title">Pengiriman Diterima</div>
+                    <div class="notification-desc">25 unit monitor dari PT Tech Solutions telah diterima</div>
+                    <div class="notification-time">2 hari yang lalu</div>
+                </div>
+            </div>
+
+            <button class="btn btn-outline mt-3">Tampilkan Lebih Banyak</button>
+        </div>
+
+        <nav class="nav-bottom">
+            <a href="super-admin.html" class="nav-item">
+                <span class="nav-icon">&#127968;</span>
+                <span>Beranda</span>
+            </a>
+            <a href="supplier-list-admin.html" class="nav-item">
+                <span class="nav-icon">&#128101;</span>
+                <span>Supplier</span>
+            </a>
+            <a href="supplier-approval-owner.html" class="nav-item">
+                <span class="nav-icon">&#10003;</span>
+                <span>Approval</span>
+            </a>
+            <a href="profil-pemasok.html" class="nav-item">
+                <span class="nav-icon">&#128100;</span>
+                <span>Profil</span>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>

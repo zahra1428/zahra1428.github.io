@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Karyawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page" style="justify-content: center;">
+            <div class="logo">S</div>
+            
+            <h1 class="text-center">Masuk sebagai Karyawan</h1>
+            <p class="text-center mb-4">Silakan masuk dengan akun perusahaan Anda</p>
+
+            <form action="login-berhasil.html" method="get">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="nama@perusahaan.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Masukkan password" required>
+                </div>
+
+                <div class="flex-between mb-3">
+                    <label style="display: flex; align-items: center; gap: 8px; font-size: 14px;">
+                        <input type="checkbox"> Ingat saya
+                    </label>
+                    <a href="#" class="btn-link">Lupa password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-3">Masuk</button>
+                
+                <p class="text-center">
+                    Bukan karyawan? <a href="login-pemasok.html" class="btn-link">Masuk sebagai Pemasok</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
